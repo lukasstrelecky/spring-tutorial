@@ -1,0 +1,11 @@
+version: '3.0'
+
+services:
+  app-be:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      ENVIRONMENT_NAME: PRODUCTION
